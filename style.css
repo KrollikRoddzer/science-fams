@@ -2,6 +2,7 @@
 {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 main
@@ -23,6 +24,9 @@ main
 
 header
 {
+    position: sticky;
+    top: 0;
+
     padding: 20px;
     background-color: #0C0C0E;
     width: 100% - 40px;
@@ -237,4 +241,47 @@ main p
 .black-link
 {
     color: black;
+}
+
+.contacts-container
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.contact-info h2
+{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-p
+{
+    margin: 40px 0;
+}
+
+.contact-p p
+{
+    margin-bottom: 20px;
+}
+
+.bold
+{
+    font-weight: 700;
+}
+
+.map iframe
+{
+    height: 100%;
+    width: 500px;
+}
+
+#About-div, #Contacts-div, #Catalog-div
+{
+    transform: translateY(-85px);
 }

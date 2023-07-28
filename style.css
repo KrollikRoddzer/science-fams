@@ -285,3 +285,20 @@ main p
 {
     transform: translateY(-85px);
 }
+
+footer
+{
+    text-align: center;
+    padding: 20px;
+    width: 100% - 40px;
+    background-color: #0C0C0E;
+}
+
+footer a, p
+{
+    color: white;
+    line-height: 45px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+}

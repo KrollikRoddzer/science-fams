@@ -3,16 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Unbounded:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Brooklyn Public Library</title>
 </head>
 <body>
     <header>
-        
+        <figure>
+            <img src="imgs/libraryLogo.png" alt="LibraryLogo">
+        </figure>
+        <div class="menu-container">
+        <nav>
+            <ul>
+                <li><a class="link-style" href="#About">About</a></li>
+                <li><a class="link-style" href="#Catalog">Catalog</a></li>
+                <li><a class="link-style" href="#Contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <div class="header-buttons-container">
+            <button>ENG</button>
+            <button class="theme-button"></button>
+        </div>
+        </div>
     </header>
     <main>
-        <section id="Welcome"></section>
-        <section id="Popular"></section>
-        <section id="Contacts"></section>
+        <section id="About">
+            <h1>About</h1>
+            <p> The Brooklyn Library is a free workspace, a large number of books you can borrow or buy</p>
+            <div class="about-image-container">
+                <figure><img src="imgs/about1.png" alt="about image 1"></figure>
+                <figure><img src="imgs/about2.png" alt="about image 2"></figure>
+                <figure><img src="imgs/about3.png" alt="about image 3"></figure>
+            </div>
+        </section>
+        <section id="Catalog">
+            <h1>Book Catalog</h1>
+            <div class="book-container">
+                <div class="book">
+                    <figure>
+                        <img src="imgs/book1.png" alt="1">
+                    </figure>
+                    <h2>
+                        <a class="black-link link-style" href="#">
+                            THE BOOK EATERS<br>
+                            By Sunyi Dean
+                        </a>
+                    </h2>
+                </div>
+                <div class="book">
+                    <figure>
+                        <img src="imgs/book2.png" alt="2">
+                    </figure>
+                    <h2>
+                        <a class="black-link link-style" href="#">
+                            CACKLE<br>
+                            By Rachel Harrison
+                        </a>
+                    </h2>
+                </div>
+                <div class="book">
+                    <figure>
+                        <img src="imgs/book3.png" alt="2">
+                    </figure>
+                    <h2>
+                        <a class="black-link link-style" href="#">
+                            DANTE: POET OF THE SECULAR WORLD<br>
+                            By Erich Auerbach
+                        </a>
+                    </h2>
+                </div>
+                <div class="book">
+                    <figure>
+                        <img src="imgs/book4.png" alt="2">
+                    </figure>
+                    <h2>
+                        <a class="black-link link-style" href="#">
+                            THE LAST QUEEN<br>
+                            By Clive Irving
+                        </a>
+                    </h2>
+                </div>
+                <div class="book">
+                    <figure>
+                        <img src="imgs/book5.png" alt="2">
+                    </figure>
+                    <h2>
+                        <a class="black-link link-style" href="#">
+                            THE BODY<br>
+                            By Stephen King
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <section id="Contacts">
+            <h1>Our Contacts</h1>
+            <div class="contacts-container">
+                
+            </div>
+        </section>
     </main>
     <footer>
 

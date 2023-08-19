@@ -3,126 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Unbounded:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Brooklyn Public Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+    <title>Regitration</title>
 </head>
 <body>
-    <header>
-        <figure>
-            <img src="imgs/libraryLogo.png" alt="LibraryLogo">
-        </figure>
-        <div class="menu-container">
-        <nav>
-            <ul>
-                <li><a class="link-style" href="#About-div">About</a></li>
-                <li><a class="link-style" href="#Catalog-div">Catalog</a></li>
-                <li><a class="link-style" href="#Contacts-div">Contacts</a></li>
-            </ul>
-        </nav>
-        <div class="header-buttons-container">
-            <button>ENG</button>
-            <button class="theme-button"></button>
-        </div>
-        </div>
-    </header>
-    <main>
-        <section id="About">
-            <div id="About-div"></div>
-            <h1>About</h1>
-            <p> The Brooklyn Library is a free workspace, a large number of books you can borrow or buy</p>
-            <div class="about-image-container">
-                <figure><img src="imgs/about1.png" alt="about image 1"></figure>
-                <figure><img src="imgs/about2.png" alt="about image 2"></figure>
-                <figure><img src="imgs/about3.png" alt="about image 3"></figure>
-        </div>
-        </section>
-        <section id="Catalog">
-            <div id="Catalog-div"></div>
-            <h1>Book Catalog</h1>
-            <div class="book-container">
-                <div class="book">
-                    <figure>
-                        <img src="imgs/book1.png" alt="1">
-                    </figure>
-                    <h2>
-                        <a class="black-link link-style" href="#">
-                            THE BOOK EATERS<br>
-                            By Sunyi Dean
-                        </a>
-                    </h2>
-                </div>
-                <div class="book">
-                    <figure>
-                        <img src="imgs/book2.png" alt="2">
-                    </figure>
-                    <h2>
-                        <a class="black-link link-style" href="#">
-                            CACKLE<br>
-                            By Rachel Harrison
-                        </a>
-                    </h2>
-                </div>
-                <div class="book">
-                    <figure>
-                        <img src="imgs/book3.png" alt="2">
-                    </figure>
-                    <h2>
-                        <a class="black-link link-style" href="#">
-                            DANTE: POET OF THE SECULAR WORLD<br>
-                            By Erich Auerbach
-                        </a>
-                    </h2>
-                </div>
-                <div class="book">
-                    <figure>
-                        <img src="imgs/book4.png" alt="2">
-                    </figure>
-                    <h2>
-                        <a class="black-link link-style" href="#">
-                            THE LAST QUEEN<br>
-                            By Clive Irving
-                        </a>
-                    </h2>
-                </div>
-                <div class="book">
-                    <figure>
-                        <img src="imgs/book5.png" alt="2">
-                    </figure>
-                    <h2>
-                        <a class="black-link link-style" href="#">
-                            THE BODY<br>
-                            By Stephen King
-                        </a>
-                    </h2>
+    <div class="flex-container">
+        <h1>Форма для заполнения</h1>
+        <form action="/success.html">
+            <div class="form__item">
+                <label class="info_label" for="firstName">Ваше имя*:</label>
+                <input type="text" 
+                        name="firstName" 
+                        id="firstName" 
+                        pattern="[a-zA-Zа-яА-Я]{2,12}"
+                        required 
+                        placeholder="Введите имя(только латинские буквы или кириллица)">
+            </div>
+            <div class="form__item">
+                <label class="info_label" for="age">Ваш возраст*:</label>
+                <input class="info_input info_input__age" 
+                        type="number" 
+                        name="age" 
+                        id="age" 
+                        required 
+                        min="1"
+                        max="150"
+                        placeholder="Введите возраст (числа от 1 до 150)">
+            </div>
+            <div class="form__item">
+                <label class="info_label" for="">Ваш пол*:</label>
+                <div class="sex_input_flex_container">
+                <input type="radio" name="sex" id="m" required value="m">
+                <label class='info_label__radio' for="m">Мужской</label>
+                <input type="radio" name="sex" id="f" required value="f">
+                <label class='info_label__radio' for="f">Женский</label>
+                <input type="radio" name="sex" id="p" required value="p">
+                <label class='info_label__radio' for="p">Паркет</label>
                 </div>
             </div>
-        </section>
-        <section id="Contacts">
-            <div id="Contacts-div"></div>
-            <h1>Our Contacts</h1>
-            <div class="contacts-container">
-                <div class="contact-info">
-                    <h2> For All Library Inquiries:</h2>
-                    <div class="contact-p">
-                        <p> Please Call <a class="black-link link-style" href="tel:6177302370">(617) 730-2370</a></p>
-                        <p> For TTY service, please call <a class="black-link link-style" href="tel:6177302370">(617) 730-2370</a></p>
-                        <p> Putterham Library: <a class="black-link link-style" href="tel:6177302385">(617) 730-2385</a></p>
-                    </div>
-                    <h2>Senior Staff</h2>
-                    <p>Library Director: <a class="bold black-link link-style"href="mailto:AmandaHirst@gmail.com">Amanda Hirst</a></p>    
-                </div>
-                <div class="map">
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0c841826a39fefede9a071f32a874fa8dc5090d5b71edd8f98ca5346c4398f0b&source=constructorLink" title="location">
-                    </iframe>            
-                </div>
+            <div class="form__item">
+                <label class="info_label" for="">Ваше резюме*:</label>
+                <label for="file" class="info_label__file">Добывить файл</label>
+                <input type="file" name="file" id="file" required>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p><a class="link-style" href="https://github.com/KrollikRoddzer">KrollikRoddzer</a> ©️ 2023</p>
-    </footer>
+            <div class="form__item">
+                <label class="info_label info_label__about" for="about">Пару слов о себе:</label>
+                <textarea id="about" placeholder="О себе"></textarea>
+            </div>
+            <div class="form__item form__item_checkbox">
+                <label 
+                    class="info_label__accept" 
+                    for="accept"
+                    data-clue="В связи с законом о просто так, вы обязаны принять данное соглашение и точка.">
+                    Согласен(-а) на обработку<br>персональных данных*:
+                </label>
+                <input type="checkbox" name="accept" id="accept" required>
+            </div>
+            <div class="form_buttons">
+                <input type="reset" value='Очистить' class="buttons">
+                <input type="submit" value="Отправить" class="buttons">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
